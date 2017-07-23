@@ -1,0 +1,11 @@
+[2017-07-23 03:48:40] local.ERROR: exception 'Symfony\Component\Console\Exception\CommandNotFoundException' with message 'There are no commands defined in the "make:" namespace.
+
+Did you mean this?
+    make' in C:\xampp\htdocs\blog\vendor\symfony\console\Application.php:469
+Stack trace:
+#0 C:\xampp\htdocs\blog\vendor\symfony\console\Application.php(501): Symfony\Component\Console\Application->findNamespace('make:')
+#1 C:\xampp\htdocs\blog\vendor\symfony\console\Application.php(183): Symfony\Component\Console\Application->find('make::auth')
+#2 C:\xampp\htdocs\blog\vendor\symfony\console\Application.php(117): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\blog\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(107): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\xampp\htdocs\blog\artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
